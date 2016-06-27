@@ -18,16 +18,12 @@ utilApp.directive('tableCopy', ['$compile', function($compile) {
 				copyElement.select();
 				try {
 					if (!document.execCommand('copy')) throw 'Not allowed.';
-				} catch (e) {
-					copyElement.remove();
-					console.log("document.execCommand('copy'); is not supported");
-					prompt('Copy the text below. (ctrl c, enter)', text);
+
 				} finally {
-					if (typeof e == 'undefined') {
-						copyElement.remove();
-					}
+					copyElement.remove();
 				}
 			}
+
 
 			// Event Handler to perform the table copy
 			var onHandleClick = function() {
@@ -56,7 +52,7 @@ utilApp.directive('tableCopy', ['$compile', function($compile) {
 			}
 
 			element.bind("click", onHandleClick)
-			
+
 		},
 
 

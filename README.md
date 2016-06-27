@@ -13,7 +13,7 @@ var app = angular.module('appName', [
     ])
 ```
 ------
-## Copy  text from table to clipboard
+## Copy table to clipboard
 
 First, add a `table-copy` attribute as an angular directive in the trigger element.
 

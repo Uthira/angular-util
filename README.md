@@ -1,14 +1,14 @@
 # angular-util
 #Usage
-Import `tableDirective.js`:
+Import `ututils.js`:
 ```html
-<srcipt type="text/javascript" src="tableDirective.js">
+<srcipt type="text/javascript" src="ututils.js">
 ```
-Inject `UtilApp` to your angular project:
+Inject `ut.utils` to your angular project:
 ```js
 var app = angular.module('appName', [
         //...
-        'UtilApp'
+        'ut.utils'
         //...
     ])
 ```

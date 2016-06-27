@@ -15,9 +15,9 @@ var app = angular.module('appName', [
 ------
 ## Copy table to clipboard
 
-First, add a `table-copy` attribute as an angular directive in the trigger element.
+First, add a `table-copy` attribute as an angular directive to the trigger element.
 
-Then  set table id by adding a `table-id` attribute in the trigger element.
+Then  set table id by adding a `table-id` attribute to the trigger element.
 
 Additionally, by  defining `ignore-columns` attribute it ignore the column content that dont want to copy.
 
